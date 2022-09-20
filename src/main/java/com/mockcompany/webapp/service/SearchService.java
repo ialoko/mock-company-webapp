@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Collections;
 
 @Service
 public class SearchService {
@@ -69,6 +70,7 @@ public class SearchService {
             }
         }
         // Return results
-        return itemList;
+        //return itemList;
+        return Collections.emptyList();
     }
 }
